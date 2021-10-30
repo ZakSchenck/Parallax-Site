@@ -191,7 +191,9 @@ transform: rotate(45deg) translate(-10px, -10px);
   margin-left: auto;
   box-shadow: 4px 4px 10px 5px lightgray;
   transition: .4s;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  width: 420px;
+  height: auto;
 }
 
 .portfolio-images img:hover {
