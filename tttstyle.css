@@ -251,6 +251,7 @@ transform: rotate(45deg) translate(-10px, -10px);
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
+  box-shadow: 4px 4px 4px 4px lightgray;
 }
 
 .staff-1 {
