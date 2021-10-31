@@ -2,6 +2,10 @@
   --main-bg-color: #abb7ff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 2000px;
 }
@@ -29,11 +33,9 @@ body {
 }
 
 .page-header.sticky {
-  background-color: white;
-  color: black;
+  background-color: black;
   z-index: 1;
   transition: .7s;
-  box-shadow: 5px 5px 3px lightgray;
   height: 60px;
 }
 
@@ -54,6 +56,11 @@ body {
   margin-top: 7px;
 }
 
+.navigation-container ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 .navigation-container ul li::after {
   content: '';
   height: 2px;
@@ -70,13 +77,9 @@ body {
 .navigation-container ul li:hover::after {
   content: '';
   height: 2px;
-  background-color: black;
+  background-color: white;
   display: block;
   width: 100%;
-}
-
-#contact {
-  border-color: white;
 }
 
 .hamburger {
@@ -91,7 +94,7 @@ body {
 }
 
 .bar-1, .bar-2, .bar-3 {
-  background-color: black;
+  background-color: white;
   height: 2px;
   width: 100%;
   border-radius: 5px;
@@ -219,7 +222,7 @@ transform: rotate(45deg) translate(-10px, -10px);
 
 /* staff code */
 
-.staff-flex {
+#staff-flex {
   display: flex;
   min-height: 600px;
   align-items: center;
@@ -239,7 +242,7 @@ transform: rotate(45deg) translate(-10px, -10px);
   margin-bottom: 40px;
 }
 
-.staff-flex h1 {
+#staff-flex h1 {
    transform: skewY(3deg);
 }
 
@@ -281,7 +284,7 @@ transform: rotate(45deg) translate(-10px, -10px);
 
 /* contact section */
 
-.contact-flex {
+#contact-flex {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
@@ -381,7 +384,7 @@ textarea {
     width: 90vw;
     font-size: 15px;
   }
-  .contact-flex {
+  #contact-flex {
     flex-direction: column;
   }
   .contact-form {
