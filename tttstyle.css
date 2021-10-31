@@ -136,11 +136,10 @@ transform: rotate(45deg) translate(-10px, -10px);
 
 .about-content {
   margin-left: 50px;
-  transform: skewY(4deg);
+  transform: skewY(3deg);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .about-content h1 {
@@ -189,7 +188,8 @@ transform: rotate(45deg) translate(-10px, -10px);
   margin-left: auto;
   box-shadow: 4px 4px 10px 5px lightgray;
   transition: .4s;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  width: 420px;
 }
 
 .portfolio-images img:hover {
