@@ -241,6 +241,7 @@ transform: rotate(45deg) translate(-10px, -10px);
   flex-direction: column;
   background-image: linear-gradient(#abb7ff, #abb7ff, #9ec3ff);
   transform: skewY(-3deg);
+  margin-top: 90px;
 }
 
 .staff-container {
@@ -259,7 +260,7 @@ transform: rotate(45deg) translate(-10px, -10px);
 }
 #staff-flex h1::after {
   content: '';
-  width: 320px;
+  width: 280px;
   height: 6px;
   display: block;
   margin-top: 10px;
@@ -433,7 +434,7 @@ textarea {
     background-color: black;
     position: absolute;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 30px;
     display: none;
     padding: 0px;
   }
@@ -442,7 +443,7 @@ textarea {
     background-color: black;
     position: absolute;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 30px;
     display: flex;
   }
   .navigation-container ul.show {
@@ -466,9 +467,6 @@ textarea {
   #logo {
     padding-left: 5px;
   }
-  #staff-flex {
-    margin-top: 100px;
-  }
 }
 
 @media all and (max-width: 500px) {
@@ -487,11 +485,14 @@ textarea {
   }
 }
 
-@media all and (max-width: 280px)  {
+@media all and (max-width: 320px)  {
   .contact-form {
-    width: 270px;
+    width: 275px;
   }
   #logo {
     font-size: 9vw;
+  }
+  .portfolio-container h1::after {
+    width: 280px;
   }
 }

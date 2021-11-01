@@ -9,6 +9,7 @@ let listContainer = document.querySelector('.list-container');
 
 hamburger.addEventListener('click', () => {
   listContainer.classList.toggle('show')
+  listContainer.classList.toggle('nav-is-open')
 });
 
 function myFunction(x) {
