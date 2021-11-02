@@ -14,7 +14,7 @@
   <div class="navigation-container">
     <ul class="list-container">
       <li><a class="navigation-item">Portfolio</a></li>
-      <li><a class="navigation-item">Socials</a></li>
+      <li><a class="navigation-item" href="https://www.instagram.com/parallaxstudios.us/" target="_blank">Instagram</a></li>
       <li><a class="navigation-item" href="#staff-flex">Staff</a></li>
       <li><a class="navigation-item" id="contact" href="#contact-flex">Contact</a></li>
     </ul>
@@ -40,7 +40,7 @@
    <div class="image-text-container">
     <img src="img-1.png" data-aos="fade-left">
     <h2 class="project-text">Football Graphic</h2>
-   </div>
+    </div>
    <div class="image-text-container">
     <img src="img-2.png" data-aos="fade-left">
     <h2 class="project-text">Parallax Logo</h2>
@@ -93,15 +93,19 @@
 
 <div class="contact-form" data-aos="fade-right">
   <form action="https://formspree.io/f/xjvjqgvr" method="post" id="contact">
+    <label for="name">Name*</label>
+    <textarea name="name" requred maxlength="40" class="name-box"></textarea>
+
     <label  for="email" class="form-text">Email* </label>
-    <input name="email" type="email" required id="email" placeholder="parallax@example.com" name="_replyto">
+    <input type="email" required id="email" placeholder="parallax@example.com" name="_replyto">
 
     <label  for="telephone" class="form-text">Telephone </label>
-    <input name="phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone">
+    <input name="phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone" placeholder="000-000-0000">
 
     <label  for="message" class="form-text">Message* </label>
     <textarea name="message" required maxlength="240" class="message-box" placeholder="Your message here"></textarea>
-    <input name="submit" type="submit" value="Send Message" id="message">
+    <input type="submit" value="Send Message" id="message">
+  </form>
 </div>
 </div>
 <script src="tttscript.js"></script>

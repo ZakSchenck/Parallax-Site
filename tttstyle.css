@@ -61,11 +61,11 @@ body {
   text-decoration: none;
 }
 
-.navigation-container ul li::after {
+.navigation-container ul li::after{
   content: '';
   height: 2px;
   width: 0%;
-  background-color: gray;
+  background-color: white;
   display: block;
   transition: .4s ease-in-out;
 }
@@ -125,7 +125,7 @@ transform: rotate(45deg) translate(-10px, -10px);
   width: 100%;
   background-image: linear-gradient(#abb7ff, #abb7ff, #9ec3ff);
   transform: skewY(-3deg);
-  min-height: 50vh
+  min-height: 50vh;
 }
 
 .about-flex {
@@ -217,6 +217,7 @@ transform: rotate(45deg) translate(-10px, -10px);
 .image-text-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -316,14 +317,17 @@ transform: rotate(45deg) translate(-10px, -10px);
   height: 300px;
   margin-left: auto;
   margin-right: auto;
-  gap: 150px;
+  gap: 200px;
 }
 
 .get-in-touch {
   display: flex;
   text-align: center;
   flex-direction: column;
+  border-left-style: solid;
   max-width: 350px;
+  border-width: 6px;
+  border-color: var(--main-bg-color);
 }
 
 .get-in-touch__text {
@@ -338,7 +342,7 @@ transform: rotate(45deg) translate(-10px, -10px);
     justify-content: center;
     right: 150px;
     margin-top: 100px;
-    height: 350px;
+    height: 425px;
     align-items: center;
 }
 
@@ -352,6 +356,10 @@ form {
   width: 290px;
 }
 
+.name-box {
+  height: 30px;
+}
+
 input {
   border: none;
   height: 30px;
@@ -362,7 +370,7 @@ label {
   margin-top: 20px;
 }
 
-textarea {
+.message-box {
   height: 100px;
   border: none;
 }
@@ -385,6 +393,18 @@ textarea {
   background-color: blue;
   color: white;
   transition: .5s;
+}
+
+/* social media links */
+
+hr {
+  margin-top: 200px;
+}
+
+.social-links {
+  height: 200px;
+  background-color: black;
+  margin-top: 200px;
 }
 
 /* media queries */
@@ -461,6 +481,9 @@ textarea {
   .navigation-container ul li:hover {
     background-color: gray;
   }
+  .navigation-container ul li:hover::after {
+    width: 0%;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -489,6 +512,9 @@ textarea {
   .contact-form {
     width: 275px;
   }
+  .get-in-touch {
+    width: 275px;
+  }
   #logo {
     font-size: 9vw;
   }
@@ -496,3 +522,5 @@ textarea {
     width: 280px;
   }
 }
+
+/* @keyframes */
